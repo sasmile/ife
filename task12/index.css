@@ -1,0 +1,107 @@
+table{
+    margin: 0 auto;
+}
+table,th,td{
+    border: 1px white solid;
+    border-bottom:none;
+}
+th{
+    color: #ffffff;
+    background-color: #000000;
+    text-align: left;
+
+}
+tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
+tr:nth-child(-n+3){
+    color: red;
+}
+input{
+    display: block;
+    margin: 50px auto;
+    width: 200px;
+    height: 20px;
+    transition: width 0.2s linear;
+}
+input:focus{
+    width: 300px;
+}
+.trans,#backg1{
+    margin:0 auto;
+    height:150px;
+    width:300px;
+    background-color: green;
+}
+.backg{
+    margin:0;
+    padding:0;
+    width:300px;
+    height:150px;
+    position: relative;
+}
+.backg>li{
+    display: inline-block;
+}
+#backg2{
+    height:150px;
+    width:150px;
+    position: relative;
+    top: -150px;
+    left: 150px;
+    animation-fill-mode:forwards;
+}
+#backg3{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+.btn-all{
+    margin:0;
+    padding:0;
+    position: relative;
+    left:229px;
+    top: -20px;
+}
+.btn-all>li{
+    display: inline-block;
+    height:20px;
+    width:20px;
+    background-color: #8cbf87;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+#backg2:target{
+    background-color:blue;
+    animation:second-two 1s linear;
+}
+#backg3:target{
+    background-color: blue;
+    animation:third-three 1s linear;
+}
+@keyframes second-two {
+    0% {
+        width:0;
+        left:100%;
+    }
+    100%{
+        left:50%;
+    }
+}
+@keyframes third-three {
+    0%{
+        width:0;
+        left:50%;
+    }
+    100%{
+        left:0;
+    }
+
+}
