@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:20px;
+}
+.div-t{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.div1,.div2,.div3{
+    width: 150px;
+    border:solid 2px #ff0000;
+}
+.div1{
+    height: 120px;
+}
+.div2{
+    height: 100px;
+}
+.div3{
+    height: 40px;
+}
+.div4{
+    width: 150px;
+    height: 200px;
+    border:solid 2px #00f;
+    margin-bottom: 20px;
+}
+
+@media  screen and (min-width: 640px){
+    .div-t{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .div-t {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .div4 {
+        order:-1;
+    }
+}
