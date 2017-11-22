@@ -1,5 +1,12 @@
-button{
+button {
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
+}
+li{
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    background-color: red;
+    color: white;
 }
