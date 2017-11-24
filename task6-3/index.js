@@ -14,3 +14,4 @@ window.onload=function () {
         listform.insertBefore(newli,listform.firstChild);
     }
 }
+document.getElementById("rightin").onclick = function rightIn() {
