@@ -15,3 +15,6 @@ window.onload=function () {
     }
 }
 document.getElementById("rightin").onclick = function rightIn() {
+
+}
+document.getElementById("leftout").onclick = function leftOut() {
