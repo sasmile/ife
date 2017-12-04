@@ -15,6 +15,7 @@ window.onload=function () {
     }
 }
 document.getElementById("rightin").onclick = function rightIn() {
-
+        newli.innerHTML = formationIn();
+        listform.insertBefore(newli,listform.firstChild);
 }
 document.getElementById("leftout").onclick = function leftOut() {
