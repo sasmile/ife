@@ -19,3 +19,6 @@ document.getElementById("rightin").onclick = function rightIn() {
         listform.insertBefore(newli,listform.firstChild);
 }
 document.getElementById("leftout").onclick = function leftOut() {
+}
+document.getElementById("rightin").onclick = function rightOut() {
+        }
